@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) NSArray *listData;
+@property (strong, nonatomic) NSArray *dataList;
+@property (strong, nonatomic) NSArray *imageList;
 @end
